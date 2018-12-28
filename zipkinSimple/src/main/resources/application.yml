@@ -1,0 +1,15 @@
+server:
+  port: 9411
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+
+spring:
+  datasource:
+    schema: classpath:/mysql.sql
+    url: jdbc:mysql://lcoalhost:3306/zipkinlog
+    username: qiuyunduo
+    password: 123456
+    continue-on-error: true
